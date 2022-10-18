@@ -10,18 +10,18 @@ import {CgShortcut} from 'react-icons/cg'
 
 
 export const leftSidebarData = [
-    {"name" : "Sai Hlyan Phyoe","img":img},
-    {"name" : "Friends","icon" : <FaUserFriends/>},
-    {"name" : "Groups","icon" : <MdGroups/>},
-    {"name" : "Watch","icon" : <BiMoviePlay/>},
-    {"name" : "Memories","icon" : <BiTimer/>},
-    {"name" : "Saved","icon" : <BsFillBookmarkStarFill/>},
-    {"name" : "Pages","icon" : <AiFillFlag/>},
-    {"name" : "Events", "icon" : <BsFillCalendarEventFill/>},
-    {"name" : "Most Recent","icon" : <FcAlarmClock/>},
-    {"name" : "See More","icon" : <BiDownArrowAlt/>},
-    {"name" : "Your Shortcuts","icon" : <CgShortcut/>},
-    {"name" : "MMS IT SWD","img" : mmSit}
+    {"name" : "Sai Hlyan Phyoe","img":img,"linkUrl": '/'},
+    {"name" : "Friends","icon" : <FaUserFriends/> ,"linkUrl": '/friends'},
+    {"name" : "Groups","icon" : <MdGroups/> ,"linkUrl": '/groups'},
+    {"name" : "Watch","icon" : <BiMoviePlay/> ,"linkUrl": '/watch'},
+    {"name" : "Memories","icon" : <BiTimer/> ,"linkUrl": '/memories'},
+    {"name" : "Saved","icon" : <BsFillBookmarkStarFill/> ,"linkUrl": '/saved'},
+    {"name" : "Pages","icon" : <AiFillFlag/> ,"linkUrl": '/pages'},
+    {"name" : "Events", "icon" : <BsFillCalendarEventFill/> ,"linkUrl": '/events'},
+    {"name" : "Most Recent","icon" : <FcAlarmClock/> ,"linkUrl": '/mostRecent'},
+    {"name" : "See More","icon" : <BiDownArrowAlt/> ,"linkUrl": '/seeMore'},
+    {"name" : "Your Shortcuts","icon" : <CgShortcut/> ,"linkUrl": '/shortcuts'},
+    {"name" : "MMS IT SWD","img" : mmSit , "linkUrl" : '/mms-it'},
 
 
 ]

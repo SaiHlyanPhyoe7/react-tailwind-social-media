@@ -5,10 +5,10 @@ import Main from "./Main";
 
 const Hero = () => {
     return (
-        <div className='grid grid-cols-12 h-screen bg-red-500 gap-2'>
-            <div className='col-span-3 bg-violet-300'><LeftSidebar/></div>
-            <div className='col-span-6 bg-violet-300'><Main/></div>
-            <div className='col-span-3 bg-violet-300'><RightSidebar/></div>
+        <div className='grid grid-cols-12 h-screen gap-2'>
+            <div className='col-span-3'><LeftSidebar/></div>
+            <div className='col-span-6'><Main/></div>
+            <div className='col-span-3'><RightSidebar/></div>
         </div>
     );
 };

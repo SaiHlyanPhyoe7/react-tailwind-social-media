@@ -1,6 +1,5 @@
-import React from 'react';
 
-const Modal = ({plusHandler,captionHandler,postAdd}) => {
+const Modal = ({handleFormDataChange,plusHandler,data,submitHandler}) => {
     return (
         <div className='h-screen w-full fixed top-0 left-0 bg-black bg-opacity-[0.5] flex justify-center items-center '>
             <div id="authentication-modal" tabIndex="-1" aria-hidden="true" className="absolute flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
@@ -13,18 +12,28 @@ const Modal = ({plusHandler,captionHandler,postAdd}) => {
                         </button>
                         <div className="py-6 px-6 lg:px-8">
                             <h3 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">Post Something in this platform</h3>
-                            <form className="space-y-6" action="#">
+                            <form onSubmit={submitHandler} className="space-y-6" action="#">
                                 <div>
-                                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Caption</label>
-                                    <input onChange={captionHandler} type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="What is on your mind ..." required=""/>
-                                    <div>
-                                        <button onClick={postAdd}>Add Caption</button>
+                                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
+                                    <input onChange={handleFormDataChange} name={"name"} type="text" className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                           placeholder="Post name?" required=""/>
+                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Caption</label>
+                                    <input onChange={handleFormDataChange} name={"caption"} type="text" className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                           placeholder="Post Caption?" required=""/>
+                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">How many likes?</label>
+                                    <input onChange={handleFormDataChange} name={"like"} type="text" className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                           placeholder="Post Likes?" required=""/>
+                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">How many comment?</label>
+                                    <input onChange={handleFormDataChange} name={"comment"} type="text" className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                           placeholder="Post comment?" required=""/>
+                                    <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">How many post share?</label>
+                                    <input onChange={handleFormDataChange} name={'share'} type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                           placeholder="Post share?" required=""/>
+                                    <div className='mt-5'>
+                                        <button className='bg-red-400 px-3 py-2 rounded-md text-white'>Add Caption</button>
                                     </div>
                                 </div>
-                                {/*<div>*/}
-                                {/*    <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Image</label>*/}
-                                {/*    <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required=""/>*/}
-                                {/*</div>*/}
+
                             </form>
                         </div>
                     </div>

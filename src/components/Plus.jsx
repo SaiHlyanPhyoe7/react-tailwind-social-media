@@ -1,33 +1,21 @@
-import React, {useState} from 'react';
+import  {useContext} from 'react';
 import {AiOutlinePlus} from 'react-icons/ai'
+import {ContextData} from "../store/DataProvider";
 import Modal from "./Modal";
 
+const Plus = ({children}) => {
 
-const Plus = () => {
-    const [plus,setPlus] = useState(false)
-    const [post,setPost] = useState('')
-    const [posts,setPosts] = useState([])
-    const plusHandler = (e)=>{
-        setPlus(!plus)
-    }
-    const captionHandler = (e) =>{
-        setPost(e.target.value)
-    }
+    const {formData,plusHandler,handleFormDataChange,submitHandler,plus} = useContext(ContextData)
 
-    const postAdd = (e) =>{
-        setPosts(pre=>[...pre , post])
-    }
-    console.log(posts)
+
     return (
-        <div className='flex justify-center pt-2 pb-5'>
-            <div>
+        <div className='flex justify-center rounded-full items-center'>
                 <button onClick={plusHandler} >
-                    <AiOutlinePlus className='mt-4 text-6xl bg-indigo-200 rounded-full'/>
+                    <AiOutlinePlus className='mt-4 text-6xl rounded-full'/>
                 </button>
                 { plus &&
-                    <Modal plusHandler={plusHandler} captionHandler={captionHandler} postAdd = {postAdd} />
+                    <Modal submitHandler={submitHandler} handleFormDataChange={handleFormDataChange} data={formData} plusHandler={plusHandler} classname=''/>
                 }
-            </div>
         </div>
     );
 };

@@ -8,15 +8,15 @@ import {rightsidebarData} from "./rightsidebarData";
 const RightSidebar = () => {
     return (
         <div className='h-[100vh] overflow-auto'>
-            <div className='bg-red-300 grid grid-cols-4 p-3'>
+            <div className='grid grid-cols-4 p-3'>
                 <h2 className='text-start col-span-2'>Friend requests</h2>
                 <p className='text-end col-span-2 text-blue-600 text-[18px]'>See All</p>
             </div>
-            <div className='grid grid-cols-5 bg-yellow-200'>
-                <div className='col-span-1 py-2 bg-pink-400'>
+            <div className='grid grid-cols-5'>
+                <div className='col-span-1 py-2'>
                     <img className='rounded-full w-[630px] p-2 mx-auto' src={img4} alt=""/>
                 </div>
-                <div className='col-span-4 bg-red-400 mx-2'>
+                <div className='col-span-4 mx-2'>
                     <div className='row-span-1 flex justify-between p-1'>
                         <h2 className='px-2'>Tint Tun Win</h2>
                         <p className='text-sm'>1d</p>
@@ -36,9 +36,9 @@ const RightSidebar = () => {
                 <hr className='w-[90%] rounded-md mt-4 mx-auto'/>
             </div>
             <div>
-                <div className='bg-fuchsia-400 grid grid-cols-4 p-3'>
+                <div className='grid grid-cols-4 p-3'>
                     <h2 className='text-start col-span-2'>Contacts</h2>
-                    <div className='bg-green-400 col-span-2 flex items-center justify-end'>
+                    <div className='col-span-2 flex items-center justify-end'>
                         <RiVideoAddLine className='text-[19px] mx-2'/>
                         <AiOutlineSearch className='text-[19px] mx-2'/>
                         <AiOutlineMore className='text-[19px] mx-2'/>

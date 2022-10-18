@@ -1,12 +1,14 @@
 import React from 'react';
 import Plus from "./Plus";
-import Posts from "./posts/Posts";
+import Post from "./posts/post/Post";
+
 
 const Main = () => {
     return (
-        <div className='bg-green-400'>
-            <Posts/>
+        <div className=''>
             <Plus/>
+            <Post/>
+
         </div>
     );
 };

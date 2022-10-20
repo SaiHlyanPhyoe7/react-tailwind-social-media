@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.duration-cus{
+    transition: 5s;
+    transform-origin: top;
+}

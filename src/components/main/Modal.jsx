@@ -1,7 +1,7 @@
 
-const Modal = ({handleFormDataChange,plusHandler,data,submitHandler}) => {
+const Modal = ({handleFormDataChange,plusHandler,data,submitHandler,modal,plus}) => {
     return (
-        <div className='h-screen w-full fixed top-0 left-0 bg-black bg-opacity-[0.5] flex justify-center items-center '>
+        <div className={`${plus ? 'scale-x-1':'scale-x-0'} h-screen w-full fixed top-0 left-0 bg-black bg-opacity-[0.5] flex justify-center items-center duration-500`}>
             <div id="authentication-modal" tabIndex="-1" aria-hidden="true" className="absolute flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
                 <div className="relative p-4 w-full max-w-md h-full md:h-auto">
                     {/*Modal content*/}
@@ -11,9 +11,10 @@ const Modal = ({handleFormDataChange,plusHandler,data,submitHandler}) => {
                             <span className="sr-only">Close modal</span>
                         </button>
                         <div className="py-6 px-6 lg:px-8">
-                            <h3 className="mb-4 text-xl font-medium text-gray-900 dark:text-white">Post Something in this platform</h3>
-                            <form onSubmit={submitHandler} className="space-y-6" action="#">
+                            <h3 className="mb-4 text-xl font-medium text-indigo-600 dark:text-white">Post Something in this platform</h3>
+                            <form onSubmit={submitHandler} className="space-y-6" action="src/components/main/Modal#">
                                 <div>
+
                                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
                                     <input onChange={handleFormDataChange} name={"name"} type="text" className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                            placeholder="Post name?" required=""/>
@@ -30,7 +31,7 @@ const Modal = ({handleFormDataChange,plusHandler,data,submitHandler}) => {
                                     <input onChange={handleFormDataChange} name={'share'} type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                            placeholder="Post share?" required=""/>
                                     <div className='mt-5'>
-                                        <button className='bg-red-400 px-3 py-2 rounded-md text-white'>Add Caption</button>
+                                        <button className='bg-indigo-400 px-3 py-2 rounded-md text-white'>Add Caption</button>
                                     </div>
                                 </div>
 
@@ -45,3 +46,12 @@ const Modal = ({handleFormDataChange,plusHandler,data,submitHandler}) => {
 };
 
 export default Modal;
+
+
+
+
+
+
+
+
+

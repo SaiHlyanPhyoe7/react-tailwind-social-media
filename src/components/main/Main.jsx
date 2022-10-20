@@ -1,6 +1,6 @@
 import React from 'react';
 import Plus from "./Plus";
-import Post from "./posts/post/Post";
+import Post from "../posts/Post";
 
 
 const Main = () => {

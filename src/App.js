@@ -1,19 +1,20 @@
 import './App.css';
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/Hero";
 import DataProvider from "./store/DataProvider";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
-import Friends from "./components/posts/leftsidebarComponents/Friends";
-import Groups from "./components/posts/leftsidebarComponents/Groups";
-import Watch from "./components/posts/leftsidebarComponents/Watch";
-import Memories from "./components/posts/leftsidebarComponents/Memories";
-import Saved from "./components/posts/leftsidebarComponents/Saved";
-import Pages from "./components/posts/leftsidebarComponents/Pages";
-import Events from "./components/posts/leftsidebarComponents/Events";
-import MostRecent from "./components/posts/leftsidebarComponents/MostRecent";
-import SeeMore from "./components/posts/leftsidebarComponents/SeeMore";
-import ShortCuts from "./components/posts/leftsidebarComponents/ShortCuts";
-import MmsitSwd from "./components/posts/leftsidebarComponents/MmsitSwd";
+import Friends from "./components/leftSideBar/leftsidebarComponents/Friends";
+import Groups from "./components/leftSideBar/leftsidebarComponents/Groups";
+import Watch from "./components/leftSideBar/leftsidebarComponents/Watch";
+import Memories from "./components/leftSideBar/leftsidebarComponents/Memories";
+import Saved from "./components/leftSideBar/leftsidebarComponents/Saved";
+import Pages from "./components/leftSideBar/leftsidebarComponents/Pages";
+import Events from "./components/leftSideBar/leftsidebarComponents/Events";
+import MostRecent from "./components/leftSideBar/leftsidebarComponents/MostRecent";
+import SeeMore from "./components/leftSideBar/leftsidebarComponents/SeeMore";
+import ShortCuts from "./components/leftSideBar/leftsidebarComponents/ShortCuts";
+import MmsitSwd from "./components/leftSideBar/leftsidebarComponents/MmsitSwd";
+import Profile from "./components/profile/Profile";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Navbar/>
                 <Routes>
                     <Route path='/' element={<Hero/>}/>
+                    <Route path='/profile' element={<Profile/>}/>
                     <Route path='/friends' element={<Friends/>}/>
                     <Route path='/groups' element={<Groups/>}/>
                     <Route path='/watch' element={<Watch/>}/>

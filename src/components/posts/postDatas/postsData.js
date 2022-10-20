@@ -7,7 +7,7 @@ export const postData = [
         'id' : 1,
         'profileImage' : img7 ,
         'postName' : 'Sai Hlyan Phyoe' ,
-        'postCaption' : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quae, quia. Ad animi aperiam, architecto, deleniti dolorum eum eveniet id illo laboriosam libero magnam neque nihil porro quod reiciendis sed!' ,
+        'postCaption' : 'Almost heaven, West Virginia Blue Ridge Mountains, Shenandoah Rive Life is old there, older than the trees Younger than the mountains, growin like a breeze .',
         'postImage' : nature ,
         'postLikes' : '189K' ,
         'postComment' : '7.8K' ,

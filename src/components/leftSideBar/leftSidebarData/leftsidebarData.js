@@ -1,5 +1,5 @@
-import img from '../imagesToTest/1.png'
-import mmSit from '../imagesToTest/2.jpeg'
+import img from '../../../imagesToTest/1.png'
+import mmSit from '../../../imagesToTest/2.jpeg'
 import {FaUserFriends} from 'react-icons/fa'
 import {MdGroups} from 'react-icons/md'
 import {BiMoviePlay,BiTimer,BiDownArrowAlt} from 'react-icons/bi'
@@ -10,7 +10,7 @@ import {CgShortcut} from 'react-icons/cg'
 
 
 export const leftSidebarData = [
-    {"name" : "Sai Hlyan Phyoe","img":img,"linkUrl": '/'},
+    {"name" : "Sai Hlyan Phyoe","img":img,"linkUrl": '/profile'},
     {"name" : "Friends","icon" : <FaUserFriends/> ,"linkUrl": '/friends'},
     {"name" : "Groups","icon" : <MdGroups/> ,"linkUrl": '/groups'},
     {"name" : "Watch","icon" : <BiMoviePlay/> ,"linkUrl": '/watch'},

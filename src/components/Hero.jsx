@@ -1,7 +1,7 @@
 import React from 'react';
-import LeftSidebar from "./LeftSidebar";
-import RightSidebar from "./RightSidebar";
-import Main from "./Main";
+import LeftSidebar from "./leftSideBar/LeftSidebar";
+import RightSidebar from "./rightSideBar/RightSidebar";
+import Main from "./main/Main";
 
 const Hero = () => {
     return (

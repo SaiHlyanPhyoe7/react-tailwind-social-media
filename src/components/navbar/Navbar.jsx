@@ -1,9 +1,8 @@
 import img1 from '../../imagesToTest/1.png'
 import React from 'react';
-import {AiOutlineSearch,AiOutlineHome,AiOutlinePlaySquare} from 'react-icons/ai'
+import {AiOutlineSearch,AiOutlineHome,AiOutlinePlaySquare,AiOutlineShop} from 'react-icons/ai'
 import {GiThreeFriends} from 'react-icons/gi'
 import {BiGroup} from 'react-icons/bi'
-import {SiEslgaming} from 'react-icons/si'
 import {CgMenuGridO} from 'react-icons/cg'
 import {FaFacebookMessenger} from 'react-icons/fa'
 import {RiNotification4Line} from 'react-icons/ri'
@@ -12,7 +11,7 @@ import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className='grid grid-cols-12 py-1 sticky top-0 bg-white shadow'>
+        <div className='grid grid-cols-12 py-1 sticky top-0 bg-white shadow opacity-1 z-40'>
             <div className='col-span-4 flex items-center justify-start my-1'>
                 <Link to='/profile' className=''>
                     <img className='w-[45px] rounded-full ml-5 hover:ring-2 hover:ring-indigo-400 hover:shadow-sm' src={img1} alt=""/>
@@ -38,8 +37,8 @@ const Navbar = () => {
                 <Link to='/groups' className='m-auto col-span-2 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
                     <BiGroup className='text-3xl'/>
                 </Link>
-                <Link to='/pages' className='m-auto col-span-2 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
-                    <SiEslgaming className='text-3xl'/>
+                <Link to='/ecommerce' className='m-auto col-span-2 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
+                    <AiOutlineShop className='text-3xl'/>
                 </Link>
             </div>
             <div className='col-span-4 flex grid grid-cols-12'>

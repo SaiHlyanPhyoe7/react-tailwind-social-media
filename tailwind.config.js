@@ -1,10 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ "./src/**/*.{js,jsx,ts,tsx}", 'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
+  content: [
+      // ...
+      'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}',
+      "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily : {
         "sans" : ["Montserrat","sans-serif"],
+      },
+      dropShadow: {
+        '3xl': '30px 0px 35px rgba(0, 0, 0, 0.25)',
+
       }
     },
   },

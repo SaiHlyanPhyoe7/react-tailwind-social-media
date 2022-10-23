@@ -6,21 +6,38 @@ const DataProvider = ({children}) => {
     const [plus,setPlus] = useState(false)
     const [obj,setObj] = useState([])
     // const objData = [formData];
+    const [selectedImage, setSelectedImage] = useState(null);
+    const [profileImage, setProfileImage] = useState(null);
+
     const [formData,setFormData] = useState({
         caption:"",
         name:"",
         like:"",
         comment:"",
-        share:""
+        share:"",
     })
-    console.log(formData)
+    // console.log(formData)
+
+    //upload image
+    const handleSelectedImage = (event)=>{
+        setSelectedImage(event.target.files[0]);
+    }
+
+
+    const handleProfileImage = (event)=>{
+        setProfileImage(event.target.files[0]);
+    }
+    // console.log(typeof(selectedImage));
+    // console.log(typeof(obj));
+
+
 
     const plusHandler = (e)=>{
         setPlus(!plus)
     }
     const submitHandler = (e)=>{
         e.preventDefault()
-        setObj(pre=>[...pre,formData])
+        setObj(pre=>[...pre,[formData,selectedImage,profileImage]])
         plusHandler(e)
     }
     // console.log(obj)
@@ -37,7 +54,11 @@ const DataProvider = ({children}) => {
                 handleFormDataChange,
                 submitHandler,
                 plus,
-                obj
+                obj,
+                selectedImage,
+                handleSelectedImage,
+                handleProfileImage
+
             }}>
                 {children}
             </ContextData.Provider>

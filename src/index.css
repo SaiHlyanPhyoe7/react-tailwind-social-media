@@ -4,7 +4,10 @@
 @tailwind utilities;
 
 
-.duration-cus{
-    transition: 5s;
-    transform-origin: top;
+.perspective-cus{
+    perspective: 1500px;
+}
+
+.perspective-cus:hover{
+    transform: rotateX(33deg);
 }

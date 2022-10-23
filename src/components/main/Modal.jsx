@@ -1,5 +1,7 @@
+import React from "react";
 
-const Modal = ({handleFormDataChange,plusHandler,data,submitHandler,modal,plus}) => {
+const Modal = ({handleFormDataChange,plusHandler,submitHandler,plus,selectedImage,handleSelectedImage,handleProfileImage}) => {
+
     return (
         <div className={`${plus ? 'scale-x-1':'scale-x-0'} h-screen w-full fixed top-0 left-0 bg-black bg-opacity-[0.5] flex justify-center items-center duration-500`}>
             <div id="authentication-modal" tabIndex="-1" aria-hidden="true" className="absolute flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
@@ -30,7 +32,27 @@ const Modal = ({handleFormDataChange,plusHandler,data,submitHandler,modal,plus})
                                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">How many post share?</label>
                                     <input onChange={handleFormDataChange} name={'share'} type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                            placeholder="Post share?" required=""/>
-                                    <div className='mt-5'>
+
+
+                                    <label className="block my-2 text-sm font-medium text-gray-900 dark:text-gray-300">Choose Your Profile Image</label>
+                                    <input className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+                                                        file:mr-5 file:py-3 file:px-10
+                                                        file:rounded-2xl file:border-0</label>
+                                                        file:text-md file:font-semibold  file:text-white
+                                                        file:bg-red-500
+                                                        hover:file:cursor-pointer hover:file:opacity-90"
+                                           type="file" name="profileImage" onChange={handleProfileImage}/>
+
+                                    <label className="block my-2 text-sm font-medium text-gray-900 dark:text-gray-300">Choose Your Post Image</label>
+                                    <input className=" border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+                                                        file:mr-5 file:py-3 file:px-10
+                                                        file:rounded-2xl file:border-0</label>
+                                                        file:text-md file:font-semibold  file:text-white
+                                                        file:bg-red-500
+                                                        hover:file:cursor-pointer hover:file:opacity-90"
+                                           type="file" name="postImage" onChange={handleSelectedImage}/>
+
+                                    <div className='mt-2'>
                                         <button className='bg-indigo-400 px-3 py-2 rounded-md text-white'>Add Caption</button>
                                     </div>
                                 </div>

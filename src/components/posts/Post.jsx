@@ -13,7 +13,7 @@ const Post = () => {
     const [show,setShow] = useState(false)
 
     return (
-        <div>
+        <div className=''>
             {
                 postData.map((data,index)=>{
                     return (
@@ -67,6 +67,8 @@ const Post = () => {
                                     </div>
                                 </div>
                             </div>
+                            <div className='border mt-5 border-gray-400'></div>
+
                         </div>
                     )
                 })

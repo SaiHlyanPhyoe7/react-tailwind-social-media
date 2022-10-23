@@ -3243,7 +3243,7 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.2.2.tgz#9f84ba3244a512f3a54e5277e8eef4c489864e40"
   integrity sha512-cOU9usZw8/dXIXKtwa8pM0OTJQuJkxMN6w30csNRUerHfeQ5R6U3kkU/FtJeIf3M202OHfY2U8ccInBG7/xogA==
 
-classnames@^2.2.6, classnames@^2.3.1:
+classnames@^2.2.6, classnames@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -4753,16 +4753,16 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
-flowbite-react@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/flowbite-react/-/flowbite-react-0.1.12.tgz#347c657af8a128ad351cd5eb635a184b4d7b465f"
-  integrity sha512-tbozCEd/FshY83oYl43WvwC4xtStEdNz5UH9i//Odd1Cu3a5lqC99VzJIuTyPMB7OLDaIWoLi+mHFLmN8af5lA==
+flowbite-react@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/flowbite-react/-/flowbite-react-0.3.2.tgz#bcbfb70e5ab83cdec5e66e7a3694d64b84388a55"
+  integrity sha512-Cioqan7ZMmA8njbUjo+CuAmOhcLPvKlHPZSA1P8A23XTHCPuqgoFq7OtIXTBw2fXFWl0DFvKcnLTAGQmDCXl+w==
   dependencies:
     "@floating-ui/react-dom" "^1.0.0"
     "@floating-ui/react-dom-interactions" "^0.9.1"
-    classnames "^2.3.1"
+    classnames "^2.3.2"
     commitizen "^4.2.5"
-    react-icons "^4.4.0"
+    react-icons "^4.6.0"
     react-indiana-drag-scroll "^2.2.0"
 
 flowbite@^1.5.3:
@@ -7867,6 +7867,16 @@ react-icons@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
   integrity sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==
+
+react-icons@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.6.0.tgz#f83eda179af5d02c047449a20b702c858653d397"
+  integrity sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g==
+
+react-images-uploading@^3.1.7:
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/react-images-uploading/-/react-images-uploading-3.1.7.tgz#a53bf0d08624802dc6b74db4ec5695b0bfaf5a5c"
+  integrity sha512-woET50eCezm645iIeP4gCoN7HjdR3T64UXC5l53yd+2vHFp+pwABH8Z/aAO5IXDeC1aP6doQ+K738L701zswAw==
 
 react-indiana-drag-scroll@^2.2.0:
   version "2.2.0"

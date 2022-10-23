@@ -15,6 +15,7 @@ import SeeMore from "./components/leftSideBar/leftsidebarComponents/SeeMore";
 import ShortCuts from "./components/leftSideBar/leftsidebarComponents/ShortCuts";
 import MmsitSwd from "./components/leftSideBar/leftsidebarComponents/MmsitSwd";
 import Profile from "./components/profile/Profile";
+import Ecommerce from "./components/main/mainComponents/Ecommerce";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
                     <Route path='/friends' element={<Friends/>}/>
                     <Route path='/groups' element={<Groups/>}/>
                     <Route path='/watch' element={<Watch/>}/>
+                    <Route path='/ecommerce' element={<Ecommerce/>}/>
+
                     <Route path='/memories' element={<Memories/>}/>
                     <Route path='/saved' element={<Saved/>}/>
                     <Route path='/pages' element={<Pages/>}/>

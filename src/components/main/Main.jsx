@@ -8,7 +8,6 @@ const Main = () => {
         <div className=''>
             <Plus/>
             <Post/>
-
         </div>
     );
 };

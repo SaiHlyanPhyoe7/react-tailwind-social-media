@@ -11,3 +11,8 @@
 .perspective-cus:hover{
     transform: rotateX(33deg);
 }
+
+.scroll-none-cus {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

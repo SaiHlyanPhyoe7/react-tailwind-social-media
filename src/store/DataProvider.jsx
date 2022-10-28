@@ -16,7 +16,6 @@ const DataProvider = ({children}) => {
         comment:"",
         share:"",
     })
-    // console.log(formData)
 
     //upload image
     const handleSelectedImage = (event)=>{
@@ -27,10 +26,6 @@ const DataProvider = ({children}) => {
     const handleProfileImage = (event)=>{
         setProfileImage(event.target.files[0]);
     }
-    // console.log(typeof(selectedImage));
-    // console.log(typeof(obj));
-
-
 
     const plusHandler = (e)=>{
         setPlus(!plus)

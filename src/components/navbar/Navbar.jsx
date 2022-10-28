@@ -1,13 +1,14 @@
-import img1 from '../../imagesToTest/1.png'
+import img1 from '../../imagesToTest/profileImg/1.png'
 import React from 'react';
-import {AiOutlineSearch,AiOutlineHome,AiOutlinePlaySquare,AiOutlineShop} from 'react-icons/ai'
+import {AiOutlineSearch,AiOutlineHome,AiOutlineShop} from 'react-icons/ai'
 import {GiThreeFriends} from 'react-icons/gi'
 import {BiGroup} from 'react-icons/bi'
 import {CgMenuGridO} from 'react-icons/cg'
 import {FaFacebookMessenger} from 'react-icons/fa'
 import {RiNotification4Line} from 'react-icons/ri'
-import img7 from '../../imagesToTest/7.jpeg'
+import img7 from '../../imagesToTest/profileImg/7.jpeg'
 import {Link} from "react-router-dom";
+import {SiEslgaming} from "react-icons/si";
 
 const Navbar = () => {
     return (
@@ -25,35 +26,35 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='col-span-4 grid grid-cols-10 gap-1'>
-                <Link to='/' className='m-auto col-span-2 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
+                <Link to='/' className='m-auto col-span-2 hover:text-indigo-400 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
                     <AiOutlineHome className='text-3xl'/>
                 </Link>
-                <Link to='/friends' className='m-auto col-span-2 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
+                <Link to='/friends' className='m-auto col-span-2 hover:text-indigo-400 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
                     <GiThreeFriends className='text-3xl'/>
                 </Link>
-                <Link to='/watch' className='m-auto col-span-2 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
-                    <AiOutlinePlaySquare className='text-3xl'/>
+                <Link to='/gaming' className='m-auto col-span-2 hover:text-indigo-400 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
+                    <SiEslgaming className='text-3xl'/>
                 </Link>
-                <Link to='/groups' className='m-auto col-span-2 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
+                <Link to='/groups' className='m-auto col-span-2 hover:text-indigo-400 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
                     <BiGroup className='text-3xl'/>
                 </Link>
-                <Link to='/ecommerce' className='m-auto col-span-2 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
+                <Link to='/ecommerce' className='m-auto col-span-2 hover:text-indigo-400 duration-300 p-3 hover:bg-gray-200 hover:shadow-md rounded-lg'>
                     <AiOutlineShop className='text-3xl'/>
                 </Link>
             </div>
-            <div className='col-span-4 flex grid grid-cols-12'>
-                <div className='col-span-8'></div>
-                <div className='p-1 rounded-lg ml-auto col-span-1 my-auto mr-3'>
-                    <CgMenuGridO className='text-3xl'/>
+            <div className='col-span-4 flex justify-center items-center grid grid-cols-9'>
+                <div className='col-span-5'></div>
+                <div className='rounded-lg ml-auto col-span-1 hover:text-indigo-400 hover:bg-gray-300 p-3 mx-8 hover:opacity-[0.9]'>
+                    <CgMenuGridO className='text-3xl cursor-pointer'/>
                 </div>
-                <div className='p-1 rounded-lg ml-auto col-span-1 my-auto mr-3'>
-                    <FaFacebookMessenger className='text-3xl'/>
+                <div className='rounded-lg ml-auto col-span-1 hover:text-indigo-400 hover:bg-gray-300 p-3 mx-8 hover:opacity-[0.9]'>
+                    <FaFacebookMessenger className='text-3xl cursor-pointer'/>
                 </div>
-                <div className='p-1 rounded-lg ml-auto col-span-1 my-auto mr-3'>
-                    <RiNotification4Line className='text-3xl'/>
+                <div className='rounded-lg ml-auto col-span-1 hover:text-indigo-400 hover:bg-gray-300 p-3 mx-8 hover:opacity-[0.9]'>
+                    <RiNotification4Line className='text-3xl cursor-pointer'/>
                 </div>
-                <div className='p-1 rounded-lg ml-auto col-span-1 my-auto mr-3'>
-                    <img src={img7} className='w-[45px] rounded-full' alt=""/>
+                <div className=' rounded-lg mx-auto my-auto hover:bg-gray-300 w-[56px] h-[56px] hover:opacity-[0.9] cursor-pointer'>
+                    <Link to='/profile'><img src={img7} className='flex justify-center items-center p-[10px] rounded-full' alt=""/></Link>
                 </div>
             </div>
         </div>

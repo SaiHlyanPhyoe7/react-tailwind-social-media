@@ -1,5 +1,5 @@
-import nature from '../../../imagesToTest/nature.jpg'
-import img7 from '../../../imagesToTest/7.jpeg'
+import nature from '../../../imagesToTest/profileImg/nature.jpg'
+import img7 from '../../../imagesToTest/profileImg/7.jpeg'
 
 
 export const postData = [

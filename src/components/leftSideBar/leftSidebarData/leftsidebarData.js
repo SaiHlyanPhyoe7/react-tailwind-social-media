@@ -1,5 +1,5 @@
-import img from '../../../imagesToTest/1.png'
-import mmSit from '../../../imagesToTest/2.jpeg'
+import img from '../../../imagesToTest/profileImg/16.png'
+import mmSit from '../../../imagesToTest/profileImg/2.jpeg'
 import {FaUserFriends} from 'react-icons/fa'
 import {MdGroups} from 'react-icons/md'
 import {BiMoviePlay,BiTimer,BiDownArrowAlt} from 'react-icons/bi'

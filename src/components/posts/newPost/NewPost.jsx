@@ -34,7 +34,7 @@ const NewPost = () => {
                                 </div>
                                 <div className='grid grid-cols-12'>
                                     <div className='col-span-11'>
-                                        <p className='text-start mx-4 my-2 px-4 py-1'>
+                                        <p className='text-start mx-4 my-2 px-4 py-1 truncate'>
                                             {data[0].caption}
                                         </p>
                                     </div>

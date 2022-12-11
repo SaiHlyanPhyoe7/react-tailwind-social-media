@@ -223,7 +223,7 @@ const GamingLeftSidebar = () => {
         }
     ]
     return (
-        <div className='col-span-3 bg-[#DFF6FF]'>
+        <div className='hidden lg:block lg:col-span-3 bg-[#DFF6FF]'>
             <div className='mx-3 py-2'>
                 <div className='flex justify-between items-center my-1'>
                     <h1 className='text-2xl text-[#47B5FF] font-semibold'>Gaming</h1>

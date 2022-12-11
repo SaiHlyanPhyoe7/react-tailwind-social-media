@@ -7,7 +7,7 @@ import {GrContactInfo} from "react-icons/gr";
 
 const FriendsLeftSideBar = () => {
     return (
-        <div className='col-span-2 py-4 text-gray-700 relative left-0 overflow-scroll'>
+        <div className='hidden lg:block lg:col-span-2 py-4 text-gray-700 relative left-0 overflow-scroll'>
             <div className='flex justify-between mx-3 py-2 items-center'>
                 <h1 className='text-2xl'>Friends</h1>
                 <div><AiOutlineSetting className='text-2xl'/></div>

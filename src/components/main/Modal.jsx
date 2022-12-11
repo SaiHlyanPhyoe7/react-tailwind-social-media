@@ -3,7 +3,7 @@ import React from "react";
 const Modal = ({handleFormDataChange,plusHandler,submitHandler,plus,handleSelectedImage,handleProfileImage}) => {
 
     return (
-        <div className={`${plus ? 'scale-x-1':'scale-x-0'} h-screen w-full fixed top-0 left-0 bg-black bg-opacity-[0.5] flex justify-center items-center duration-500`}>
+        <div className={`${plus ? 'scale-x-1':'scale-x-0'} h-screen w-full fixed top-[50px] lg:top-0 lg:left-0 bg-black bg-opacity-[0.5] flex justify-center items-center duration-500`}>
             <div id="authentication-modal" tabIndex="-1" aria-hidden="true" className="absolute flex justify-center items-center overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
                 <div className="relative p-4 w-full max-w-md h-full md:h-auto">
                     {/*Modal content*/}

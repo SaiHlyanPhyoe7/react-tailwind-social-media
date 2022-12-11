@@ -30,11 +30,11 @@ const EcommerceNavbar = () => {
     return (
         <div className='bg-indigo-100 py-3 shadow sticky top-[70px] z-20'>
             <div className='flex justify-between items-center w-[90%] mx-auto'>
-                <div className='flex justify-center items-center'>
+                <div className='hidden lg:block flex justify-center items-center'>
                     <AiOutlineShop className='text-4xl text-indigo-500'/>
                     <h1 className='text-3xl text-indigo-500'>MyShop</h1>
                 </div>
-                <div className='flex space-x-5 justify-center items-center'>
+                <div className='flex w-full mx-auto space-x-5 justify-center items-center'>
 
                     <div className=''>
                         <input className='rounded-l-md bg-white border-none outline-none text-center' onChange={catchNavInput} type="search" placeholder='Search'/>
@@ -42,7 +42,7 @@ const EcommerceNavbar = () => {
                                 onClick={clickHandler} >Search Now</button>
                     </div>
 
-                    <div>
+                    <div className='hidden lg:block'>
                         <select className='cursor-pointer rounded-lg px-8 text-start border-none outline-none' onClick={catchNavInput}>
                             <option className='text-xl' value=" ">Show All</option>
                             <option className='text-xl' value="Mens">Mens</option>

@@ -165,11 +165,11 @@ const FriendsRightSideBar = () => {
     console.log(data)
     return (
 
-        <div className='col-span-10 h-[100vh] overflow-scroll text-white grid grid-cols-6 h-full'>
+        <div className='col-span-12 lg:col-span-10 h-[100vh] overflow-scroll text-white grid grid-cols-6 h-full'>
             {
                 data.map((data,index)=>{
                     return (
-                        <div key={data.id} className='bg-gray-200 col-span-1 h-[380px] my-1 rounded-lg mx-1 duration-1000'>
+                        <div key={data.id} className='bg-gray-200 col-span-3 md:col-span-2 lg:col-span-1 h-[380px] my-1 rounded-lg mx-1 duration-1000'>
                             <img src={data.img} className='h-[220px] shadow shadow-gray-600 mx-auto mt-2 rounded-lg' alt=""/>
                             <div className='mt-2'>
                                 <h1 className='mx-3 text-[#E21D35]'>{data.name}</h1>

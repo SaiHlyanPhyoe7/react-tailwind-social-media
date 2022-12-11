@@ -24,8 +24,8 @@ const EcommerceBody = () => {
                     {
                         data.chang.map((data,index)=>{
                             return (
-                                <div key={data.id} className='group space-y-3 border border-red-400 col-span-4 h-[600px] row-auto px-5 overflow-hidden flex flex-col justify-evenly m-3
-                                                rounded-tl-[20px] rounded-tr-[90px] rounded-br-[15px] rounded-bl-[50px]'>
+                                <div key={data.id} className='group space-y-3 border border-red-400 h-[600px] row-auto px-5 overflow-hidden flex flex-col justify-evenly m-3
+                                                rounded-tl-[20px] rounded-tr-[90px] rounded-br-[15px] rounded-bl-[50px] col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-6 xl:col-span-4'>
                                     <div className='duration-1000 bg-white rounded-lg flex justify-center items-center mt-4'>
                                         <img src={data.image} alt="" className='duration-300 rounded-lg mt-8 mb-2 object-cover max-w-[100%] group-hover:rotate-[-12deg] h-[150px]'/>
                                     </div>

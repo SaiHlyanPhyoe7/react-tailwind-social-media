@@ -5,6 +5,7 @@ import {FaRegCommentAlt} from 'react-icons/fa'
 import {RiShareForwardLine} from 'react-icons/ri'
 import {postData} from "./postDatas/postsData";
 import NewPost from "./newPost/NewPost";
+import { Link } from 'react-router-dom';
 
 
 
@@ -24,7 +25,11 @@ const Post = () => {
                                         <img src={data.profileImage} alt="img2"
                                              className='rounded-full cursor-pointer border-blue-500 hover:opacity-[0.9] w-[38px] justify-self-center'/>
                                     </div>
-                                    <div className='col-span-10 cursor-pointer hover:underline'><h1>{data.postName}</h1></div>
+                                    <div className='col-span-10 cursor-pointer hover:underline'>
+                                        <Link to='/profile' >
+                                        <h1>{data.postName}</h1>
+                                        </Link>
+                                    </div>
                                     <div className='col-span-1 justify-self-center'><FiMoreVertical/></div>
                                 </div>
                                 <div className='grid grid-cols-12'>

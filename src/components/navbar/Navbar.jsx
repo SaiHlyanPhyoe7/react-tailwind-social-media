@@ -13,7 +13,7 @@ import {SiEslgaming} from "react-icons/si";
 const Navbar = () => {
     return (
         <div className='grid grid-cols-12 py-1 sticky top-0 bg-white shadow opacity-1 z-40'>
-            <div className='hidden lg:block lg:col-span-4 lg:flex items-center justify-start my-1'>
+            <div className='hidden lg:col-span-4 lg:flex items-center justify-start my-1'>
                 <Link to='/profile' className=''>
                     <img className='w-[45px] rounded-full ml-5 hover:ring-2 hover:ring-indigo-400 hover:shadow-sm' src={img1} alt=""/>
                 </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
                     <AiOutlineShop className='text-3xl'/>
                 </Link>
             </div>
-            <div className='hidden lg:block lg:flex lg:col-span-4 justify-center items-center grid grid-cols-9'>
+            <div className='lg:flex lg:col-span-4 justify-center items-center grid grid-cols-9'>
                 <div className='col-span-5'></div>
                 <div className='rounded-lg ml-auto col-span-1 hover:text-indigo-400 hover:bg-gray-300 p-3 mx-8 hover:opacity-[0.9]'>
                     <CgMenuGridO className='text-3xl cursor-pointer'/>

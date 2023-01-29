@@ -26,204 +26,205 @@ import camila from '../../../imagesToTest/actress/camilaCabello.jpeg'
 import dc from '../../../imagesToTest/profileImg/2.jpeg'
 import yellow from '../../../imagesToTest/profileImg/3.jpeg'
 
+const data = [
+    {
+        id : 1,
+        icon : <FaGamepad/>,
+        text : 'All games'
+    },
+    {
+        id : 2,
+        icon : <TbPlayerPlay/>,
+        text : 'Action'
+    },
+    {
+        id : 3,
+        icon : <FaMap/>,
+        text : 'Adventure'
+    },
+    {
+        id : 4,
+        icon : <SiApplearcade/>,
+        text : 'Arcade'
+    },
+    {
+        id : 5,
+        icon : <GiShatteredSword/>,
+        text : 'Battle'
+    },
+    {
+        id : 6,
+        icon : <TbBrandAppleArcade/>,
+        text : 'Board'
+    },
+    {
+        id : 7,
+        icon : <GiWhiteTower/>,
+        text : 'Builder'
+    },
+    {
+        id : 8,
+        icon : <CgCardHearts/>,
+        text : 'Card'
+    },
+    {
+        id : 9,
+        icon : <MdOutlineCasino/>,
+        text : 'Casino'
+    },
+    {
+        id : 10,
+        icon : <SiAffinitydesigner/>,
+        text : 'Design'
+    },
+    {
+        id : 11,
+        icon : <GiMatchbox/>,
+        text : 'Match'
+    },
+    {
+        id : 12,
+        icon : <AiOutlineMergeCells/>,
+        text : 'Merge'
+    },
+    {
+        id : 13,
+        icon : <BsPuzzle/>,
+        text : 'Puzzle'
+    },
+    {
+        id : 14,
+        icon : <SiClockify/>,
+        text : 'Quick Play'
+    },
+    {
+        id : 15,
+        icon : <MdQuiz/>,
+        text : 'Quiz and Trivia'
+    },
+    {
+        id : 16,
+        icon : <FaFlag/>,
+        text : 'Racing'
+    },
+    {
+        id : 17,
+        icon : <GiNinjaArmor/>,
+        text : 'Role-Playing'
+    },
+    {
+        id : 18,
+        icon : <FaRunning/>,
+        text : 'Runner'
+    },
+    {
+        id : 19,
+        icon : <TbBoxModel/>,
+        text : 'Simulation'
+    },
+    {
+        id : 20,
+        icon : <SiWeightsandbiases/>,
+        text : 'Solitaire'
+    },
+    {
+        id : 21,
+        icon : <FcSportsMode/>,
+        text : 'Sports'
+    },
+    {
+        id : 22,
+        icon : <VscSymbolKeyword/>,
+        text : 'Word'
+    }
+]
+const GamingIconData = [
+    {
+        id: 1,
+        mainIcon: <SiFacebookgaming/>,
+        arrowIcon: null,
+        text: 'For You',
+
+    },
+    {
+        id: 2,
+        mainIcon: <TbPlayerPlay/>,
+        arrowIcon: <BsChevronDown/>,
+        text: 'Video',
+
+    },
+    {
+        id: 3,
+        mainIcon: <BsTrophyFill/>,
+        arrowIcon: <BsChevronDown/>,
+        text: 'Tournaments',
+
+    },
+    {
+        id: 4,
+        mainIcon: <GiGamepad/>,
+        arrowIcon: <BsChevronDown/>,
+        text: 'Play Games',
+
+    },
+    {
+        id: 5,
+        mainIcon: <IoMdNotifications/>,
+        arrowIcon: <BsChevronDown/>,
+        text: 'Notifications',
+
+    }
+]
+const StreamersFollow = [
+    {
+        id: 1,
+        img: galGadot,
+        name: 'Gal Gadot',
+        game: 'PUBG Mobile',
+    },
+    {
+        id: 2,
+        img: camila,
+        name: "Camila Cabello",
+        game: 'League of Lgends',
+    },
+    {
+        id: 3,
+        img: dc,
+        name: 'DC & Similar',
+        game: 'Fornite',
+    },
+    {
+        id: 4,
+        img: yellow,
+        name: 'Yellowflash Gaming',
+        game: 'Mobile Legends',
+    },
+]
+const RecentlyWatch = [
+    {
+        id: 1,
+        img: profile14,
+        name: 'Channel Myanmar',
+        game: 'Fornite',
+    },
+    {
+        id: 2,
+        img: profile13,
+        name: "Falcon Esport",
+        game: 'Mobile Legends',
+    },
+    {
+        id: 3,
+        img: profile12,
+        name: 'Viswah',
+        game: 'Mario',
+    }
+]
 const GamingLeftSidebar = () => {
-    const data = [
-        {
-            id : 1,
-            icon : <FaGamepad/>,
-            text : 'All games'
-        },
-        {
-            id : 2,
-            icon : <TbPlayerPlay/>,
-            text : 'Action'
-        },
-        {
-            id : 3,
-            icon : <FaMap/>,
-            text : 'Adventure'
-        },
-        {
-            id : 4,
-            icon : <SiApplearcade/>,
-            text : 'Arcade'
-        },
-        {
-            id : 5,
-            icon : <GiShatteredSword/>,
-            text : 'Battle'
-        },
-        {
-            id : 6,
-            icon : <TbBrandAppleArcade/>,
-            text : 'Board'
-        },
-        {
-            id : 7,
-            icon : <GiWhiteTower/>,
-            text : 'Builder'
-        },
-        {
-            id : 8,
-            icon : <CgCardHearts/>,
-            text : 'Card'
-        },
-        {
-            id : 9,
-            icon : <MdOutlineCasino/>,
-            text : 'Casino'
-        },
-        {
-            id : 10,
-            icon : <SiAffinitydesigner/>,
-            text : 'Design'
-        },
-        {
-            id : 11,
-            icon : <GiMatchbox/>,
-            text : 'Match'
-        },
-        {
-            id : 12,
-            icon : <AiOutlineMergeCells/>,
-            text : 'Merge'
-        },
-        {
-            id : 13,
-            icon : <BsPuzzle/>,
-            text : 'Puzzle'
-        },
-        {
-            id : 14,
-            icon : <SiClockify/>,
-            text : 'Quick Play'
-        },
-        {
-            id : 15,
-            icon : <MdQuiz/>,
-            text : 'Quiz and Trivia'
-        },
-        {
-            id : 16,
-            icon : <FaFlag/>,
-            text : 'Racing'
-        },
-        {
-            id : 17,
-            icon : <GiNinjaArmor/>,
-            text : 'Role-Playing'
-        },
-        {
-            id : 18,
-            icon : <FaRunning/>,
-            text : 'Runner'
-        },
-        {
-            id : 19,
-            icon : <TbBoxModel/>,
-            text : 'Simulation'
-        },
-        {
-            id : 20,
-            icon : <SiWeightsandbiases/>,
-            text : 'Solitaire'
-        },
-        {
-            id : 21,
-            icon : <FcSportsMode/>,
-            text : 'Sports'
-        },
-        {
-            id : 22,
-            icon : <VscSymbolKeyword/>,
-            text : 'Word'
-        }
-    ]
-    const GamingIconData = [
-        {
-            id: 1,
-            mainIcon: <SiFacebookgaming/>,
-            arrowIcon: null,
-            text: 'For You',
 
-        },
-        {
-            id: 2,
-            mainIcon: <TbPlayerPlay/>,
-            arrowIcon: <BsChevronDown/>,
-            text: 'Video',
-
-        },
-        {
-            id: 3,
-            mainIcon: <BsTrophyFill/>,
-            arrowIcon: <BsChevronDown/>,
-            text: 'Tournaments',
-
-        },
-        {
-            id: 4,
-            mainIcon: <GiGamepad/>,
-            arrowIcon: <BsChevronDown/>,
-            text: 'Play Games',
-
-        },
-        {
-            id: 5,
-            mainIcon: <IoMdNotifications/>,
-            arrowIcon: <BsChevronDown/>,
-            text: 'Notifications',
-
-        }
-    ]
-    const StreamersFollow = [
-        {
-            id: 1,
-            img: galGadot,
-            name: 'Gal Gadot',
-            game: 'PUBG Mobile',
-        },
-        {
-            id: 2,
-            img: camila,
-            name: "Camila Cabello",
-            game: 'League of Lgends',
-        },
-        {
-            id: 3,
-            img: dc,
-            name: 'DC & Similar',
-            game: 'Fornite',
-        },
-        {
-            id: 4,
-            img: yellow,
-            name: 'Yellowflash Gaming',
-            game: 'Mobile Legends',
-        },
-    ]
-    const RecentlyWatch = [
-        {
-            id: 1,
-            img: profile14,
-            name: 'Channel Myanmar',
-            game: 'Fornite',
-        },
-        {
-            id: 2,
-            img: profile13,
-            name: "Falcon Esport",
-            game: 'Mobile Legends',
-        },
-        {
-            id: 3,
-            img: profile12,
-            name: 'Viswah',
-            game: 'Mario',
-        }
-    ]
     return (
-        <div className='hidden lg:block lg:col-span-3 bg-[#DFF6FF]'>
+        <div className='hidden lg:block lg:col-span-3 border shadow-2xl shadow-[#DFF6FF] border-[#DFF6FF]'>
             <div className='mx-3 py-2'>
                 <div className='flex justify-between items-center my-1'>
                     <h1 className='text-2xl text-[#47B5FF] font-semibold'>Gaming</h1>
@@ -238,7 +239,7 @@ const GamingLeftSidebar = () => {
                            className='w-full rounded-r-full bg-gray-300 py-1 border-none outline-none'
                     />
                 </div>
-                <div className='grid grid-cols-9 flex justify-start items-center'>
+                <div className='flex justify-start items-center'>
                     <div className='col-span-1 w-[48px] flex justify-center items-center'>
                         <img src={gaming} alt="" className=' rounded-full'/>
                     </div>
@@ -251,7 +252,7 @@ const GamingLeftSidebar = () => {
                 {
                     GamingIconData.map((data,index)=>{
                         return (
-                            <div className='flex grid grid-cols-9 justify-center items-center my-3'>
+                            <div className='grid grid-cols-9 justify-center items-center my-3'>
                                 <div className='col-span-1 flex justify-center items-center h-[50px]'>
                                     <div className='text-2xl hover:bg-indigo-400 rounded-full bg-[#6c757d] text-[#e9ecef] p-[11px]'>
                                     {data.mainIcon}
